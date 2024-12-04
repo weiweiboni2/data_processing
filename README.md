@@ -18,11 +18,36 @@ DroneVehicle 数据集由无人机采集的 56,878 张图像组成，其中一�
 ## 图片裁剪及标签转化
 
 1. 裁剪图片  
-2. 标签转化  
-3. 数据集划分  
-4. 生成txt文件  
-5. 生成yaml文件  
-6. 修改配置文件  
+源图大小840×712
+![源图](figure/00001_s.jpg)  
+裁剪图大小640×512
+![裁剪图](figure/00001_c.jpg)  
+
+    ```python
+    python img_crop.py
+    ```
+
+2. 标签转化
+将标签文件转换为yolo格式，需要将标签文件中的xmin、ymin、xmax、ymax转换为相对于图像宽高的比例。
+将此数据集用于目标检测任务，需要将标签文件转化为yolo格式。  
+
+    ```python
+    python xml2txt.py
+    ```
+
+    ```python
+    # 需要对部分错误标签进行修改
+    for obj in root.findall('object'):
+            name = obj.find('name').text
+            if name == 'feright car':
+                name = 'feright_car'
+            elif name == 'feright':
+                name = 'feright_car'
+            elif name == '*':
+                name = 'feright_car'
+            else:
+                name = name
+    ```
 
 😙
 *斜体文本*  
