@@ -1,6 +1,13 @@
 # DroneVehicle数据集处理方法
 
+原始图像尺寸为840×712，四周设置了100个像素的白色边框，需要执行预处理操作以去除周围白色边框并将图像比例更改为640×512。
+
 ## 数据集下载
+
+DroneVenicle数据集是由天津大学收集、标注的大型无人机航拍车辆数据集。
+训练集下载地址：<https://pan.baidu.com/s/1ptZCJ1mKYqFnMnsgqEyoGg> (node: ngar)
+验证集下载地址：<https://pan.baidu.com/s/1e6e9mESZecpME4IEdU8t3Q> (node: jnj6)
+测试集下载地址：<https://pan.baidu.com/s/1JlXO4jEUQgkR1Vco1hfKhg> (node: tqwc)
 
 ## 数据集介绍
 
