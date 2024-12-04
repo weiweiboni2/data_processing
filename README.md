@@ -75,7 +75,7 @@ DroneVehicle 数据集由无人机采集的 56,878 张图像组成，其中一�
     ```
 
 ## 引用
->
+
 >@ARTICLE{sun2020drone,
   title={Drone-based RGB-Infrared Cross-Modality Vehicle Detection via Uncertainty-Aware Learning}, 
   author={Sun, Yiming and Cao, Bing and Zhu, Pengfei and Hu, Qinghua},
@@ -86,5 +86,4 @@ DroneVehicle 数据集由无人机采集的 56,878 张图像组成，其中一�
   pages={1-1},
   doi={10.1109/TCSVT.2022.3168279}
 }
->
 >
