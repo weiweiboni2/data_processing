@@ -22,6 +22,7 @@ DroneVehicle 数据集由无人机采集的 56,878 张图像组成，其中一�
 ![源图](figure/00001_s.jpg)  
 裁剪图大小640×512
 ![裁剪图](figure/00001_c.jpg)  
+对图片进行裁剪：
 
     ```python
     python img_crop.py
@@ -29,14 +30,20 @@ DroneVehicle 数据集由无人机采集的 56,878 张图像组成，其中一�
 
 2. 标签转化
 将标签文件转换为yolo格式，需要将标签文件中的xmin、ymin、xmax、ymax转换为相对于图像宽高的比例。
-将此数据集用于目标检测任务，需要将标签文件转化为yolo格式。  
+将此数据集用于目标检测任务，需要将标签文件转化为yolo格式：
+
+    ```TEXT
+    0 0.20390625 0.07421875 0.0421875 0.1171875
+    ```
+
+    运行xml2txt.py脚本，生成yolo格式的标签文件
 
     ```python
     python xml2txt.py
     ```
 
     ```python
-    # 需要对部分错误标签进行修改
+    # 需要对部分错误标签进行了以下修改（可选）
     for obj in root.findall('object'):
             name = obj.find('name').text
             if name == 'feright car':
@@ -47,6 +54,24 @@ DroneVehicle 数据集由无人机采集的 56,878 张图像组成，其中一�
                 name = 'feright_car'
             else:
                 name = name
+    ```
+
+3. 配置文件
+   将配置文件设置为如下格式：
+
+    ```TEXT
+    path: E:\python_pj\yolov8\YOLOv8-main\data\DroneVehicle_det
+    train: E:\python_pj\yolov8\YOLOv8-main\data\DroneVehicle_det\images\train
+    val: E:\python_pj\yolov8\YOLOv8-main\data\DroneVehicle_det\images\val
+    test: E:\python_pj\yolov8\YOLOv8-main\data\DroneVehicle_det\images\test
+    names:
+        0: '机动车：'
+        1: '机动车：'
+        2: '机动车：'
+        3: '机动车：'
+        4: '机动车：'
+    nc: 5
+
     ```
 
 😙
