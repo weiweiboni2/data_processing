@@ -1,5 +1,7 @@
 # DroneVehicle数据集处理方法
 
+![python](https://img.shields.io/badge/python-3.9+-yellow.svg)
+
 原始图像尺寸为840×712，四周设置了100个像素的白色边框，需要执行预处理操作以去除周围白色边框并将图像比例更改为640×512。
 
 ## 数据集下载
