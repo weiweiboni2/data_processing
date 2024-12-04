@@ -56,7 +56,7 @@ DroneVehicle 数据集由无人机采集的 56,878 张图像组成，其中一�
                 name = name
     ```
 
-1. 配置文件
+3. 配置文件
    将配置文件设置为如下格式：
 
     ```TEXT
@@ -74,47 +74,17 @@ DroneVehicle 数据集由无人机采集的 56,878 张图像组成，其中一�
 
     ```
 
-😙
-*斜体文本*  
-**粗体文本**
-***粗斜体文本***
-~~删除线文本~~
-
-- 项目一
-- 项目二
-- 项目三
-
-1. 项目一
-2. 项目二
-3. 项目三
-
-- [ ] 任务一
-- [x] 任务二
-
-[百度AA](https://www.baidu.com)
-[百度DDDDDD][1]
-
-[1]: https://www.baidu.com
-
-```python
-print('Hello World!')
-```
-
-| 表头1 | 表头2 | 表头3 | 表头4 |
-| :--: | :--: | :--: | :--: |
-| 内容1 | 内容2 | 内容3 | 内容4 |
-
-> 这是一个引用块。
-> 11111
-> 11111111
-
------------------------------
-
-<!-- ![百度logo](https://www.baidu.com/img/bdlogo.png) -->
-![示例图片](0000164_01068_d_0000162000.png)
-![License](https://img.shields.io/badge/license-MIT-yellow)  #静态badge图标
-![github license](https://img.shields.io/github/license/:user/:repo)  #动态连接github仓库的图标
-![Twitter](<https://img.shields.io/twitter/follow/:user>? label=Follow) #动态连接twitter账户的图标
-![Twitter](<https://img.shields.io/twitter/follow/:user>? style=social) #采用社交图标
-![Language](https://img.shields.io/badge/language-c++-brightgreen)  #静态图标
-![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen)
+## 引用
+>
+>@ARTICLE{sun2020drone,
+  title={Drone-based RGB-Infrared Cross-Modality Vehicle Detection via Uncertainty-Aware Learning}, 
+  author={Sun, Yiming and Cao, Bing and Zhu, Pengfei and Hu, Qinghua},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TCSVT.2022.3168279}
+}
+>
+>
